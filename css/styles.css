@@ -416,7 +416,7 @@ span {
         background: var(--bg-color);
         border-top: .1rem solid rgba(0, 0, 0, .2);
         box-shadow: 0 .5rem 1rem rgba(0, 0, 0, .2);
-        display: ;
+        display: none;
     }
 
     .navbar.active {
@@ -428,4 +428,86 @@ span {
         font-size: 2rem;
         margin: 3rem 0;
     }
+
+    .home {
+        flex-direction: column;
+    }
+
+    .home-con {
+        font-size: 2.6rem;
+    }
+
+    .home-con h1 {
+        font-size: 6rem;
+    }
+
+    .home-con h3:nth-child(1) {
+        margin-top: 6rem;
+    }
+
+    .home-img img {
+        width: 70vw;
+        animation: floatImage 4s ease-in-out infinite;
+        border-radius: 45% 55% 44% 56% / 53% 33% 67% 47%;
+        margin-top: 4rem;
+    }
+
+    @keyframes floatImage {
+        0% {
+            transform: translateY(0);
+        }
+
+        50% {
+            transform: translateY(-2.4rem);
+        }
+
+        100% {
+            transform: translateY(0);
+        }
+
+    }
+
+    .about {
+        flex-direction: column-reverse;
+    }
+
+    .about img {
+        width: 70vw;
+        box-shadow: 0 0 5rem var(--main-color);
+    }
+
+    .services h2 {
+        margin-bottom: 3rem;
+    }
+
+    .services-container .services-box {
+        padding: 2rem 1px;
+        flex: content;
+    }
+
+    .portfolio h2 {
+        margin-bottom: 3rem;
+    }
+
+    .portfolio-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .contact {
+        padding: 10rem 0 0;
+    }
+}
+
+@media (max-width: 600px) {
+    .portfolio-container {
+        grid-template-columns: 1fr;
+    }
+
+    .contact form .input-box input,
+    .contact form textarea {
+        width: 80%;
+        margin: 1rem auto;
+    }
+
+
 }
