@@ -58,3 +58,14 @@ ScrollReveal().reveal('.home-con, .heading', { origin: 'top' });
 ScrollReveal().reveal('.home-img, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
 ScrollReveal().reveal('.home-con h1, .about-img', { origin: 'left' });
 ScrollReveal().reveal('.home-con p, .about-content', { origin: 'right' });
+
+/* typed js*/
+
+const typed = new Typed('.multiple', {
+    strings: ['Frontend Developer', 'UI/UX Designer', 'Backend developer'],
+    typeSpeed: 100,
+    backSpeed: 100,
+    backDelay: 1000,
+    loop: true
+})
+
